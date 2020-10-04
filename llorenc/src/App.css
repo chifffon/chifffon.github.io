@@ -14,12 +14,19 @@
   border-radius: 0px;
 }
 
+@font-face {
+  font-family: Assistant;
+  src: url("./font/Assistant-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #ffffff;
   margin: 0px;
   padding: 0px;
   color: #db0000;
-  font-family: Sneak;
+  font-family: Assistant;
   overflow-x: hidden;
 }
 
@@ -211,4 +218,8 @@ a.medium {
 
 a.social:hover {
   transform: translateY(-2px);
+}
+
+.link {
+  padding-right: 50px;
 }

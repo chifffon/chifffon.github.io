@@ -48,9 +48,10 @@ In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Th
                 <br></br>
                 social: <a>making friends in a new country</a>
                 <br></br>
-                self: <a>rope skipping, therapy</a>
+                self: <a>rope skipping</a>
                 <br></br>
-                creative: <a>guitar, drawing</a>
+                creative: <a>guitar</a>
+                <br></br>
                 <br></br>
               </div>
               <p>{quote}</p>
@@ -105,6 +106,20 @@ In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Th
                   class="link"
                 >
                   linkedin
+                </a>
+                <a
+                  href="https://www.instagram.com/hhbhbbbj/"
+                  target="_blank"
+                  class="link"
+                >
+                  ig
+                </a>
+                <a
+                  href="https://github.com/chifffon/"
+                  target="_blank"
+                  class="link"
+                >
+                  gh
                 </a>
               </p>
             </div>
