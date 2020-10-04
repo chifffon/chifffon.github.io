@@ -1,14 +1,15 @@
 import React from "react";
 import axios from "axios";
 import About from "./about";
-import Archive from "./archive";
+import Archive from "./archive/archive";
 import Blog from "./blog";
 import Working from "./working";
+import Listening from "./listening/listening";
 
 import "./App.css";
 
 class App extends React.Component {
-  state = { advice: "", columnContent: null };
+  state = { advice: "", columnContent: <Archive></Archive> };
 
   componentDidMount() {
     this.fetchAdvice();
@@ -42,46 +43,32 @@ class App extends React.Component {
     this.setState({ columnContent: <Working></Working> });
   };
 
+  selectListening = () => {
+    this.setState({ columnContent: <Listening></Listening> });
+  };
+
   render() {
     const paragraph = `llorenç ibarra`;
     const quote = `"I have decided to live. I am going to use this suffering to purify me and help me get closer to God.
 I think I could stand anything, any suffering, only to be able to say and to repeat to myself every moment, 'I exist.'
-In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Though I sit alone in a pillar -- I exist! I see the sun, and if I don't see the sun, I know it's there. And there's a whole life in that, in knowing that the sun is there. "
-
-- The Brothers Karamazov`;
+In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Though I sit alone in a pillar -- I exist! I see the sun, and if I don't see the sun, I know it's there. And there's a whole life in that, in knowing that the sun is there."`;
     return (
       <div>
         <div className="row">
           <div className="column-left">
-            <div className="header">
-              <h1>{paragraph}</h1>
-            </div>
+            <h1>{paragraph}</h1>
             <div>
               <a onClick={this.selectAbout}>about</a> //{" "}
-              <a onClick={this.selectBlog}>blog</a> //{" "}
+              <a onClick={this.selectBlog}>stuff</a> //{" "}
               <a onClick={this.selectArchive}>archive</a> //{" "}
-              <a onClick={this.selectWorking}>currently working on</a>
+              <a onClick={this.selectWorking}>working on</a> //{" "}
+              <a onClick={this.selectListening}>listening to</a>
               <br></br>
               <br></br>
             </div>
             <div className="bullet"></div>
             <p>{quote}</p>
             <p>
-              I like people, but I am naturally shy and withdrawn. I am a tough
-              person with myself. I need to constantly remind myself to not be
-              hypervigilant.
-              <br></br>
-              <br></br>
-              "Dove sta memoria You have not snared her, Scarecrow Death: She's
-              in my pulse, My heart, my breath. Eye sees only Local hardware;
-              Brain conceives Nonlocal software; Brain knows more Than eye can
-              see: Brain can scan Eternity."
-              <br></br>
-              <br></br>I like people, but I am naturally shy and withdrawn. My
-              life revolves around love. I need to constantly remind myself to
-              love myself.
-              <br></br>
-              <br></br>
               "Dove sta memoria You have not snared her, Scarecrow Death: She's
               in my pulse, My heart, my breath. Eye sees only Local hardware;
               Brain conceives Nonlocal software; Brain knows more Than eye can

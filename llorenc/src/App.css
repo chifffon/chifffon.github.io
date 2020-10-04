@@ -2,6 +2,9 @@
   width: 3px;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   margin-top: 40px;
@@ -15,28 +18,29 @@
   border-radius: 0px;
 }
 
-/* @font-face {
-  font-family: monospace;
-  src: url("./font/Assistant-Regular.ttf") format("truetype");
-  font-weight: normal;
+@font-face {
+  font-family: quicksand;
+  src: url("./font/Inconsolata-VariableFont_wdth\,wght.ttf") format("truetype");
   font-style: normal;
-} */
+}
 
 body {
-  cursor: crosshair;
-  background-color: #ffffff;
+  background-color: #f0c7a670;
   margin: 0px;
   padding: 0px;
   color: #db0000;
-  font-family: monospace;
+  font-family: quicksand;
   overflow-x: hidden;
+}
+
+h1 {
+  /* padding-bottom: 10px; */
 }
 
 h1,
 h3,
 h4 {
   color: #db0000;
-  font-family: monospace;
 }
 
 a {
@@ -44,16 +48,17 @@ a {
   cursor: pointer;
   color: #db0000;
   font-weight: 700;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #c76c6c;
-  opacity: 0.4;
+  color: #c76c6cad;
 }
 
-/* h3 {
-    color: #eee;
-} */
+h2 a {
+  text-decoration: underline;
+  font-style: oblique;
+}
 
 .app {
   height: 100%;
@@ -96,33 +101,13 @@ a:hover {
   overflow-x: hidden;
 }
 
-.bullet {
-  padding: 7px 0;
-}
-
 .column-right {
   flex: 63%;
-  padding: 20px;
+  padding: 10px;
   padding-left: 35px;
   overflow: scroll;
-  max-height: 80vh;
+  max-height: 90vh;
   overflow-x: hidden;
-}
-
-.buton {
-  position: relative;
-  text-decoration: none;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  height: auto;
-  width: auto;
-  opacity: 10;
-  background-color: #093145;
-  /* border: 2px solid purple; */
 }
 
 ul {
@@ -138,19 +123,12 @@ li {
 }
 
 .bullet-box {
-  /* padding-left: 41px; */
-
-  /* text-align: right; */
-  /* width: 100%; */
-  /* display: inline-block; */
   padding-left: 14px;
 }
 
 .box {
-  /* font-size: 22px; */
   border-bottom: solid #db0000 2px;
   padding: 12px 0;
-  /* padding-left: 7px; */
 }
 
 .footer {
@@ -162,22 +140,6 @@ li {
   padding: 10px;
   margin: 0;
   padding-left: 10px;
-}
-
-.buton span {
-  color: #164ca7;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.7px;
-}
-
-.buton:hover {
-  animation: rotate 0.7s ease-in-out both;
-}
-
-.buton:hover span {
-  animation: storm 0.7s ease-in-out both;
-  animation-delay: 0.06s;
 }
 
 @keyframes rotate {

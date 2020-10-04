@@ -1,0 +1,97 @@
+.photo {
+  max-width: 700px;
+  padding: 30px;
+}
+
+/**
+ * Magazine Cutout
+ * Inspired upon https://tympanus.net/codrops/2020/02/05/crafting-a-cutout-collage-layout-with-css-grid-and-clip-path/
+ * but without the need to manually cut up the image in Photoshop (or the like) first.
+*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.photo-container {
+  cursor: pointer;
+  margin-bottom: 200px;
+}
+
+.cutout {
+  position: relative;
+  height: 702px;
+}
+
+.cutout > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cutout > img:nth-of-type(1) {
+  opacity: 1;
+  clip-path: polygon(27.68% 39.7%, 27.26% 55.5%, 4.98% 56.24%, 4% 34%);
+  transform: translateY(-28%) translateX(-7%);
+  z-index: 10;
+}
+
+.cutout > img:nth-of-type(2) {
+  opacity: 1;
+  clip-path: polygon(
+    39.74% 26.34%,
+    38.44% 32.64%,
+    23.59% 32.93%,
+    23.88% 23.08%,
+    39.76% 23.31%
+  );
+  transform: translateX(1.5%);
+  z-index: 9;
+}
+
+.cutout > img:nth-of-type(3) {
+  opacity: 1;
+  clip-path: polygon(
+    35.25% 9.9%,
+    57.56% -0.7%,
+    99.8% 17.91%,
+    99.99% 98.21%,
+    44.86% 97.9%,
+    45.69% 56.45%,
+    34.56% 21.78%
+  );
+  transform: translateX(8%);
+  z-index: 8;
+}
+
+.cutout > img:nth-of-type(4) {
+  opacity: 1;
+  clip-path: polygon(
+    59.86% 43.28%,
+    74.72% 43.59%,
+    77.62% 76.23%,
+    43.5% 74.22%,
+    42.87% 49.62%
+  );
+  transform: scale(1.1);
+  z-index: 11;
+}
+
+.cutout > img:nth-of-type(5) {
+  opacity: 1;
+  clip-path: polygon(
+    23.34% 83.14%,
+    22.68% 91.56%,
+    25.74% 97.54%,
+    1.81% 99.23%,
+    0.24% 82.91%
+  );
+  transform: scale(1.03) translateX(-1.5%) translateY(1%) rotate(0.2deg);
+  z-index: 11;
+}

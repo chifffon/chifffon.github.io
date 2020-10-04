@@ -4,6 +4,8 @@ export default class Working extends React.Component {
   render() {
     return (
       <div>
+        <h1>working on</h1>
+
         <ul>
           <li className="box">
             career <br></br>
@@ -23,6 +25,11 @@ export default class Working extends React.Component {
             creative
             <br></br>
             <a className="bullet-box">music</a>
+          </li>
+          <li className="box">
+            reading
+            <br></br>
+            <a className="bullet-box">books & articles</a>
           </li>
         </ul>
       </div>
