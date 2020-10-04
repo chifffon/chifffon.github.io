@@ -3,6 +3,7 @@ import axios from "axios";
 import About from "./about";
 import Archive from "./archive";
 import Blog from "./blog";
+import Working from "./working";
 
 import "./App.css";
 
@@ -37,6 +38,10 @@ class App extends React.Component {
     this.setState({ columnContent: <Archive></Archive> });
   };
 
+  selectWorking = () => {
+    this.setState({ columnContent: <Working></Working> });
+  };
+
   render() {
     const paragraph = `llorenç ibarra`;
     const quote = `"I have decided to live. I am going to use this suffering to purify me and help me get closer to God.
@@ -53,48 +58,18 @@ In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Th
             </div>
             <div>
               <a onClick={this.selectAbout}>about</a> //{" "}
-              <a>currently working on</a> //{" "}
               <a onClick={this.selectBlog}>blog</a> //{" "}
-              <a onClick={this.selectArchive}>archive</a>
-              <br></br>
+              <a onClick={this.selectArchive}>archive</a> //{" "}
+              <a onClick={this.selectWorking}>currently working on</a>
               <br></br>
               <br></br>
             </div>
-            <ul>
-              <li className="box">
-                career <br></br>
-                <a className="bullet-box">decentralized identity</a>
-              </li>
-              <li className="box">
-                social
-                <br></br>
-                <a className="bullet-box">thinking less things</a>
-              </li>
-              <li className="box">
-                active
-                <br></br>
-                <a className="bullet-box">rope skipping</a>
-              </li>
-              <li className="box">
-                creative
-                <br></br>
-                <a className="bullet-box">music</a>
-              </li>
-            </ul>
-            <div className="bullet">
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <a>about</a>
-              <br></br>
-            </div>
+            <div className="bullet"></div>
             <p>{quote}</p>
             <p>
-              I am amazed by people, but I am naturally shy and withdrawn. I am
-              a tough person with myself. I need to constantly remind myself to
-              not be hypervigilant.
+              I like people, but I am naturally shy and withdrawn. I am a tough
+              person with myself. I need to constantly remind myself to not be
+              hypervigilant.
               <br></br>
               <br></br>
               "Dove sta memoria You have not snared her, Scarecrow Death: She's
@@ -102,9 +77,9 @@ In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Th
               Brain conceives Nonlocal software; Brain knows more Than eye can
               see: Brain can scan Eternity."
               <br></br>
-              <br></br>I am amazed by people, but I am naturally shy and
-              withdrawn. My life revolves around love. I need to constantly
-              remind myself to love myself.
+              <br></br>I like people, but I am naturally shy and withdrawn. My
+              life revolves around love. I need to constantly remind myself to
+              love myself.
               <br></br>
               <br></br>
               "Dove sta memoria You have not snared her, Scarecrow Death: She's

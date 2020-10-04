@@ -15,12 +15,12 @@
   border-radius: 0px;
 }
 
-@font-face {
-  font-family: Assistant;
+/* @font-face {
+  font-family: monospace;
   src: url("./font/Assistant-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 body {
   cursor: crosshair;
@@ -28,7 +28,7 @@ body {
   margin: 0px;
   padding: 0px;
   color: #db0000;
-  font-family: Assistant;
+  font-family: monospace;
   overflow-x: hidden;
 }
 
@@ -36,14 +36,19 @@ h1,
 h3,
 h4 {
   color: #db0000;
-  font-family: Assistant;
+  font-family: monospace;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
   color: #db0000;
-  font-weight: 1000;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #c76c6c;
+  opacity: 0.4;
 }
 
 /* h3 {
@@ -142,7 +147,7 @@ li {
 }
 
 .box {
-  font-size: 22px;
+  /* font-size: 22px; */
   border-bottom: solid #db0000 2px;
   padding: 12px 0;
   /* padding-left: 7px; */
@@ -225,33 +230,6 @@ li {
   align-content: center;
 }
 
-a.social {
-  margin: 0 1rem;
-  align-items: center;
-  transition: transform 250ms;
-  display: inline-block;
-}
-
-a.twitter {
-  color: #eee;
-}
-
-a.linkedin {
-  color: #eee;
-}
-
-a.github {
-  color: #eee;
-}
-
-a.medium {
-  color: #eee;
-}
-
-a.social:hover {
-  transform: translateY(-2px);
-}
-
 .link {
-  padding-right: 135px;
+  padding-right: 125px;
 }
