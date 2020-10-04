@@ -24,7 +24,7 @@ class App extends React.Component {
   };
 
   render() {
-    const paragraph = `present llorenç ibarra`;
+    const paragraph = `currently llorenç ibarra`;
     const quote = `"I have decided to live. I am going to use this suffering to purify me and help me get closer to God.
 I think I could stand anything, any suffering, only to be able to say and to repeat to myself every moment, 'I exist.'
 In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Though I sit alone in a pillar -- I exist! I see the sun, and if I don't see the sun, I know it's there. And there's a whole life in that, in knowing that the sun is there. "

@@ -34,7 +34,7 @@ h1,
 h3,
 h4 {
   color: #db0000;
-  font-family: Sneak;
+  font-family: Assistant;
 }
 
 a {
@@ -94,7 +94,8 @@ a {
 
 .column-right {
   flex: 63%;
-  padding: 10px;
+  padding: 20px;
+  padding-left: 35px;
   overflow: scroll;
   max-height: 80vh;
   overflow-x: hidden;
@@ -221,5 +222,5 @@ a.social:hover {
 }
 
 .link {
-  padding-right: 50px;
+  padding-right: 135px;
 }
