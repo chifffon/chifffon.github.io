@@ -21,7 +21,7 @@ export default function SocialFollow() {
       <a href="https://github.com/chifffon" className="github social">
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>
-      <a href="https://twitter.com/no" className="twitter social">
+      <a href="https://twitter.com/" className="twitter social">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
     </div>
