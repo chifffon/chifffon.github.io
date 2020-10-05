@@ -20,9 +20,13 @@ export default class Original extends React.Component {
   render() {
     const { src } = this.props;
     return (
-      <div onMouseEnter={this.switchlayout} onMouseLeave={this.switchlayout}>
-        {this.state.cutout ? (
-          <div className="photo-container">
+      <div>
+        <div
+          onMouseEnter={this.switchlayout}
+          onMouseLeave={this.switchlayout}
+          className="photo-container"
+        >
+          {this.state.cutout ? (
             <div className="cutout">
               <img className="photo" src={src}></img>
               <img className="photo" src={src}></img>
@@ -31,12 +35,10 @@ export default class Original extends React.Component {
               <img className="photo" src={src}></img>
               <img className="photo" src={src}></img>
             </div>
-          </div>
-        ) : (
-          <div className="photo-container">
+          ) : (
             <img className="photo" src={src}></img>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     );
   }

@@ -31,6 +31,31 @@ body {
   color: #db0000;
   font-family: quicksand;
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.border {
+  margin-top: 40px;
+  display: inline-block;
+  height: 100vh;
+  width: 12px;
+  position: absolute;
+  left: 36%;
+  cursor: w-resize;
+}
+
+.border-collapsed {
+  top: 10px;
+  border-bottom: 22px solid #db00009a;
+  border-right: 17px solid transparent;
+  border-left: 38px solid transparent;
+  position: absolute;
+  left: 10px;
+  cursor: w-resize;
+}
+
+.border-collapsed:hover {
+  border-bottom: 22px solid #ce59599a;
 }
 
 h1 {
@@ -101,13 +126,35 @@ h2 a {
   overflow-x: hidden;
 }
 
+.column-left-minimized {
+  flex: 0%;
+  overflow: hidden;
+  /* max-height: 90vh; */
+  overflow-x: hidden;
+  display: none;
+}
+
 .column-right {
   flex: 63%;
   padding: 10px;
   padding-left: 35px;
-  overflow: scroll;
+  overflow-y: scroll;
   max-height: 90vh;
   overflow-x: hidden;
+}
+
+.column-right-max {
+  flex: 100%;
+  padding: 10px;
+  padding-left: 35px;
+  overflow-y: scroll;
+  max-height: 90vh;
+  /* overflow-x: hidden; */
+  /* padding: 10px;
+  padding-left: 35px;
+  overflow: scroll;
+  max-height: 90vh;
+  overflow-x: hidden; */
 }
 
 ul {
@@ -193,5 +240,5 @@ li {
 }
 
 .link {
-  padding-right: 125px;
+  margin-right: 125px;
 }

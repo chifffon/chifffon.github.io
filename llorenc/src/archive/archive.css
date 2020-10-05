@@ -20,6 +20,8 @@ body {
 .photo-container {
   cursor: pointer;
   margin-bottom: 200px;
+  width: 900px;
+  margin: 0 auto;
 }
 
 .cutout {
