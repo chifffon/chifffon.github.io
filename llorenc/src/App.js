@@ -3,7 +3,7 @@ import axios from "axios";
 import About from "./about";
 import Archive from "./archive/archive";
 import Blog from "./blog";
-import Working from "./working";
+import Working from "./working/working";
 import Listening from "./listening/listening";
 
 import "./App.css";
@@ -13,7 +13,7 @@ import { isMobile } from "./util/util";
 class App extends React.Component {
   state = {
     advice: "",
-    columnContent: <Archive></Archive>,
+    columnContent: <About></About>,
     columnLayout: true
   };
 
@@ -59,7 +59,7 @@ class App extends React.Component {
   };
 
   render() {
-    const paragraph = `llorenç ibarra`;
+    const paragraph = `llorenç`;
     const quote = `"I have decided to live. I am going to use this suffering to purify me and help me get closer to God.
 I think I could stand anything, any suffering, only to be able to say and to repeat to myself every moment, 'I exist.'
 In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Though I sit alone in a pillar -- I exist! I see the sun, and if I don't see the sun, I know it's there. And there's a whole life in that, in knowing that the sun is there."`;
@@ -81,10 +81,10 @@ In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Th
                 <h1>{paragraph}</h1>
                 <div>
                   <a onClick={this.selectAbout}>about</a> //{" "}
-                  <a onClick={this.selectBlog}>stuff</a> //{" "}
                   <a onClick={this.selectArchive}>archive</a> //{" "}
-                  <a onClick={this.selectWorking}>working on</a> //{" "}
-                  <a onClick={this.selectListening}>listening to</a>
+                  <a onClick={this.selectListening}>listening to</a> //{" "}
+                  <a onClick={this.selectWorking}>working on</a>
+                  {/* <a onClick={this.selectBlog}>stuff</a> <br></br> */}
                   <br></br>
                   <br></br>
                 </div>
@@ -129,26 +129,19 @@ In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Th
             </div>
             <p className="footer">
               <a
-                href="https://linkedin.com/in/jorge-ibarra-borbas"
-                target="_blank"
-                className="link"
-              >
-                linkedin
-              </a>
-              <a
-                href="https://www.instagram.com/hhbhbbbj/"
+                href="https://www.instagram.com/jacyndog/"
                 target="_blank"
                 className="link"
               >
                 instagram
               </a>
-              <a
+              {/* <a
                 href="https://github.com/chifffon/"
                 target="_blank"
                 className="link"
               >
                 github
-              </a>
+              </a> */}
             </p>
           </>
         ) : (

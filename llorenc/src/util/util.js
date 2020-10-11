@@ -1,3 +1,4 @@
+//eslint-ignore-file
 export const isMobile = (window.mobileCheck = function() {
   let check = false;
   (function(a) {
