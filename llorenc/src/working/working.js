@@ -4,6 +4,7 @@ import Bullet from "./workingBullet";
 import beingMoreSocial from "./entries/beingMoreSocial";
 import ropeSkipping from "./entries/ropeSkipping";
 import thinkingless from "./entries/thinkingless";
+import coffee from "./entries/writing/hermano";
 import laying from "./entries/laying";
 import booksArticles from "./entries/booksArticles";
 
@@ -25,7 +26,7 @@ export default class Working extends React.Component {
             social
             <br></br>
             <Bullet title="thinking less things" text={thinkingless}></Bullet>
-            <Bullet title='being more "social"' text></Bullet>
+            <Bullet title='being more "social"' text={beingMoreSocial}></Bullet>
             {/* <p>Trying to think less things and be less self-absorbed.</p> */}
           </li>
           <li className="box">
@@ -52,11 +53,12 @@ export default class Working extends React.Component {
             ></Bullet>
             {/* <p></p> */}
           </li>
-          <li className="box">
+          {/* <li className="box">
             writing
             <br></br>
-            <Bullet title="laying in the floor" text={laying}></Bullet>
-          </li>
+            <Bullet title="lying in the floor" text={laying}></Bullet>
+            <Bullet title="coffee" text={coffee}></Bullet>
+          </li> */}
         </ul>
       </div>
     );

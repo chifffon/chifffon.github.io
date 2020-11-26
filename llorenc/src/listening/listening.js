@@ -21,7 +21,7 @@ export default class Listening extends React.Component {
         </h4>
         <h3>Last edit: 10/06/2020</h3>
         <p>
-          Since September, I'm trying to step away from melancholic music. Music
+          Since September, I'm trying to step away from melancholic music! Music
           that evokes melancholy and hopelessness has an effect on my daily mood
           and it gets to the point where it affects my emotional stability
           considerably, even so, it is still the music that I've listened to for
@@ -31,6 +31,19 @@ export default class Listening extends React.Component {
         <ul>
           <li>
             <div className="playlist">
+              <div className="month">
+                <a href="https://open.spotify.com/playlist/3hXRE5s85Xp1Ium8i2fktX?si=pyOg-3RUTomU4dImc3Jdvg">
+                  November
+                </a>
+                <iframe
+                  src="https://open.spotify.com/embed/playlist/3hXRE5s85Xp1Ium8i2fktX"
+                  width="300"
+                  height="380"
+                  frameborder="0"
+                  allowtransparency="true"
+                  allow="encrypted-media"
+                ></iframe>
+              </div>
               <div className="month">
                 <a href="https://open.spotify.com/playlist/1PxmvP7utB8k7pfGGVdaKN?si=Ze7bS-MVTrmop69gFlcvLg">
                   October

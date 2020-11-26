@@ -89,6 +89,14 @@ In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Th
                   <br></br>
                 </div>
                 <div className="bullet"></div>
+                <p>
+                  Hi, welcome to my site! This site is still a WIP and possibly
+                  it will always be a WIP. There's a lot of trash and
+                  purposeless quotes to fill up the blank space. Overall I'm
+                  trying to write more stuff, and this is kind of my "blog"
+                  output, although it's lacking intention.
+                  <br></br>
+                </p>
                 <p>{quote}</p>
                 <p>
                   "Dove sta memoria You have not snared her, Scarecrow Death:
@@ -129,7 +137,7 @@ In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Th
             </div>
             <p className="footer">
               <a
-                href="https://www.instagram.com/jacyndog/"
+                href="https://www.instagram.com/dumb1500/"
                 target="_blank"
                 className="link"
               >
