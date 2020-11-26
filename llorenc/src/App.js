@@ -94,7 +94,11 @@ In thousands of agonies -- I exist. I'm tormented on the rack -- but I exist! Th
                   it will always be a WIP. There's a lot of trash and
                   purposeless quotes to fill up the blank space. Overall I'm
                   trying to write more stuff, and this is kind of my "blog"
-                  output, although it's lacking intention.
+                  output, although it's lacking intention and it's mostly me
+                  rambling about myself and my thoughts, I've no expectation for
+                  someone to relate anything that has been written here, but if
+                  you do relate, and you feel like talking about it, feel free
+                  to reach out.
                   <br></br>
                 </p>
                 <p>{quote}</p>
