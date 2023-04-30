@@ -14,7 +14,7 @@ export default class WorkingBullet extends React.Component {
             {title}
           </a>
         </div>
-        {this.state.expanded && <p>{text}</p>}
+        {this.state.expanded && <p className="bullet-paragraph">{text}</p>}
       </div>
     );
   }

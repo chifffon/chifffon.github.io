@@ -48,7 +48,9 @@ export default class About extends React.Component {
           other posts.
           <br></br>
           <br></br>
-          Last edit: 11/25/2020
+          Last edit: 4/29/2023
+          <br></br>
+          Prev edit: 11/25/2020
         </p>
       </div>
     );

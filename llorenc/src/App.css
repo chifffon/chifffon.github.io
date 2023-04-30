@@ -16,6 +16,10 @@
   border-radius: 35px;
 }
 
+::-webkit-scrollbar-track:hover {
+  box-shadow: inset 0 0 1px black;
+}
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #b30000;
@@ -42,24 +46,34 @@ body {
   margin-top: 40px;
   display: inline-block;
   height: 100vh;
-  width: 12px;
-  position: absolute;
-  left: 36%;
-  cursor: w-resize;
+  width: 15px;
+  cursor: -webkit-grab;
+  left: -8px;
+  position: relative;
+  transition: all .5s;
+}
+
+.border:hover {
+  box-shadow: inset 0 0 5px #db00009a;
+  transition: all .5s;
 }
 
 .border-collapsed {
-  top: 10px;
-  border-bottom: 22px solid #db00009a;
-  border-right: 17px solid transparent;
-  border-left: 38px solid transparent;
-  position: absolute;
-  left: 10px;
-  cursor: w-resize;
+  margin-left: 5px;
+  display: inline-block;
+  height: 100vh;
+  width: 55px;
+  cursor: -webkit-grab;
+  left: -8px;
+  position: relative;
+  transition: 0.5s;
+  background: rgb(46, 14, 14);
+  transition: all .5s;
 }
 
 .border-collapsed:hover {
-  border-bottom: 22px solid #ce59599a;
+  box-shadow: inset 0 0 35px #db00009a;
+  transition: all .5s;
 }
 
 h1 {
@@ -128,14 +142,15 @@ h2 a {
   overflow: scroll;
   max-height: 90vh;
   overflow-x: hidden;
+  transition: all .5s;
 }
 
 .column-left-minimized {
   flex: 0%;
   overflow: hidden;
-  /* max-height: 90vh; */
   overflow-x: hidden;
   display: none;
+  transition: all .5s;
 }
 
 .column-right {
@@ -145,6 +160,7 @@ h2 a {
   overflow-y: scroll;
   max-height: 90vh;
   overflow-x: hidden;
+  transition: all .5s;
 }
 
 .column-right-max {
@@ -153,12 +169,6 @@ h2 a {
   padding-left: 35px;
   overflow-y: scroll;
   max-height: 90vh;
-  /* overflow-x: hidden; */
-  /* padding: 10px;
-  padding-left: 35px;
-  overflow: scroll;
-  max-height: 90vh;
-  overflow-x: hidden; */
 }
 
 ul {

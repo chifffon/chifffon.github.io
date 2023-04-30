@@ -1,0 +1,181 @@
+import React from "react";
+
+let highlights = `    - Deep Work: Professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit. These efforts create new value, improve your skill, and are hard to replicate.
+    - the state of mental strain that accompanies deep work is also necessary to improve your abilities.
+    - Microsoft CEO Bill Gates famously conducted “Think Weeks” twice a year, during which he would isolate himself (often in a lakeside cottage) to do nothing but read and think big thoughts.
+    - Shallow Work: Noncognitively demanding, logistical-style tasks, often performed while distracted. These efforts tend to not create much new value in the world and are easy to replicate.
+    - On one side of the debate are techno-skeptics like Jaron Lanier and John Freeman, who suspect that many of these tools, at least in their current state, damage society, while on the other side techno-optimists like Clive Thompson argue that they’re changing society, for sure, but in ways that’ll make us better off.
+    - Our work culture’s shift toward the shallow (whether you think it’s philosophically good or bad) is exposing a massive economic and personal opportunity for the few who recognize the potential of resisting this trend and prioritizing depth—an opportunity that, not too long ago, was leveraged by a bored young consultant from Virginia named Jason Benn.
+    - The Deep Work Hypothesis: The ability to perform deep work is becoming increasingly rare at exactly the same time it is becoming increasingly valuable in our economy. As a consequence, the few who cultivate this skill, and then make it the core of their working life, will thrive.
+    - Three to four hours a day, five days a week, of uninterrupted and carefully directed concentration, it turns out, can produce a lot of valuable output.
+    - More generally, the lack of distraction in my life tones down that background hum of nervous mental energy that seems to increasingly pervade people’s daily lives. I’m comfortable being bored, and this can be a surprisingly rewarding skill.
+    - Once the talent market is made universally accessible, those at the peak of the market thrive while the rest suffer.
+    - In this new economy, three groups will have a particular advantage: those who can work well and creatively with intelligent machines, those who are the best at what they do, and those with access to capital.
+    - Two Core Abilities for Thriving in the New Economy 1. The ability to quickly master hard things. 2. The ability to produce at an elite level, in terms of both quality and speed. 
+    - To master a cognitively demanding task requires this specific form of practice.
+    - To be great at something is to be well myelinated.
+    - By contrast, if you’re trying to learn a complex new skill (say, SQL database management) in a state of low concentration (perhaps you also have your Facebook feed open), you’re firing too many circuits simultaneously and haphazardly to isolate the group of neurons you actually want to strengthen.
+    - If you’re comfortable going deep, you’ll be comfortable mastering the increasingly complex systems and skills needed to thrive in our economy. If you instead remain one of the many for whom depth is uncomfortable and distraction ubiquitous, you shouldn’t expect these systems and skills to come easily to you.
+    - “It sometimes confuses my colleagues,” he told me. “They say, ‘You’re not out of office, I see you in your office right now!’” But to Grant, it’s important to enforce strict isolation until he completes the task at hand.
+    - High-Quality Work Produced = (Time Spent) x (Intensity of Focus)
+    - The best students understood the role intensity plays in productivity and therefore went out of their way to maximize their concentration—radically reducing the time required to prepare for tests or write papers, without diminishing the quality of their results.
+    - In a well-cited study, Mark and her co-authors observed knowledge workers in real offices and found that an interruption, even if short, delays the total time required to complete a task by a significant fraction. “This was reported by subjects as being very detrimental,” she summarized with typical academic understatement.
+    - “Twitter is crack for media addicts. It scares me, not because I’m morally superior to it, but because I don’t think I could handle it. I’m afraid I’d end up letting my son go hungry.”
+    - The Principle of Least Resistance: In a business setting, without clear feedback on the impact of various behaviors to the bottom line, we will tend toward behaviors that are easiest in the moment.
+    - in the absence of metrics, most people fall back on what’s easiest.
+    - To do real good physics work, you do need absolute solid lengths of time… it needs a lot of concentration… if you have a job administrating anything, you don’t have the time. So I have invented another myth for myself: that I’m irresponsible. I’m actively irresponsible. I tell everyone I don’t do anything. If anyone asks me to be on a committee for admissions, “no,” I tell them: I’m irresponsible.
+    - Knowledge workers, I’m arguing, are tending toward increasingly visible busyness because they lack a better way to demonstrate their value.
+    - Busyness as Proxy for Productivity: In the absence of clear indicators of what it means to be productive and valuable in their jobs, many knowledge workers turn back toward an industrial indicator of productivity: doing lots of stuff in a visible manner.
+    - Postman argued that our society was sliding into a troubling relationship with technology. We were, he noted, no longer discussing the trade-offs surrounding new technologies, balancing the new efficiencies against the new problems introduced. If it’s high-tech, we began to instead assume, then it’s good. Case closed. He called such a culture a technopoly, and he didn’t mince words in warning against it. “Technopoly eliminates alternatives to itself in precisely the way Aldous Huxley outlined in Brave New World,” he argued in his 1993 book on the topic. “It does not make them illegal. It does not make them immoral. It does not even make them unpopular. It makes them invisible and therefore irrelevant.”
+    - [fav] To support deep work often requires the rejection of much of what is new and high-tech. Deep work is exiled in favor of more distracting high-tech behaviors, like the professional use of social media, not because the former is empirically inferior to the latter.
+    - If you believe in the value of depth, this reality spells bad news for businesses in general, as it’s leading them to miss out on potentially massive increases in their value production. But for you, as an individual, good news lurks. The myopia of your peers and employers uncovers a great personal advantage. Assuming the trends outlined here continue, depth will become increasingly rare and therefore increasingly valuable. Having just established that there’s nothing fundamentally flawed about deep work and nothing fundamentally necessary about the distracting behaviors that displace it, you can therefore continue with confidence with the ultimate goal of this book: to systematically develop your personal ability to go deep—and by doing so, reap great rewards.
+    - it can seem that all knowledge work boils down to the same exhausting roil of e-mails and PowerPoint, with only the charts used in the slides differentiating one career from another. Furrer himself identifies this blandness when he writes: “The world of information superhighways and cyber space has left me rather cold and disenchanted.”
+    - [fav] we live in an era where anything Internet related is understood by default to be innovative and necessary. Depth-destroying behaviors such as immediate e-mail responses and an active social media presence are lauded, while avoidance of these trends generates suspicion.
+    - “Who you are, what you think, feel, and do, what you love—is the sum of what you focus on.”
+    - what you choose to focus on exerts significant leverage on your attitude going forward. These simple choices can provide a “reset button” to your emotions.
+    - There’s a gravity and sense of importance inherent in deep work—whether you’re Ric Furrer smithing a sword or a computer programmer optimizing an algorithm. Gallagher’s theory, therefore, predicts that if you spend enough time in this state, your mind will understand your world as rich in meaning and importance.
+    - cultivating “concentration so intense that there is no attention left over to think about anything irrelevant, or to worry about problems.”)
+    - A workday driven by the shallow, from a neurological perspective, is likely to be a draining and upsetting day, even if most of the shallow things that capture your attention seem harmless or fun.
+    - [fav] Ironically, jobs are actually easier to enjoy than free time, because like flow activities they have built-in goals, feedback rules, and challenges, all of which encourage one to become involved in one’s work, to concentrate and lose oneself in it. Free time, on the other hand, is unstructured, and requires much greater effort to be shaped into something that can be enjoyed.
+    - Human beings, it seems, are at their best when immersed deeply in something challenging.
+    - [fav] To build your working life around the experience of flow produced by deep work is a proven path to deep satisfaction.
+    - “The Enlightenment’s metaphysical embrace of the autonomous individual leads not just to a boring life,” Dreyfus and Kelly worry; “it leads almost inevitably to a nearly unlivable one.”
+    - [fav] The task of a craftsman, they conclude, “is not to generate meaning, but rather to cultivate in himself the skill of discerning the meanings that are already there.”
+    - [fav] The same applies to knowledge work. You don’t need a rarified job; you need instead a rarified approach to your work.
+    - you’re a disciple of depth in a shallow world.
+    - You have a finite amount of willpower that becomes depleted as you use it.
+    - Knuth deploys a form of monasticism that prioritizes deep work by trying to eliminate or minimize all other types of work. Chappell, by contrast, deploys a rhythmic strategy in which he works for the same hours (five to seven thirty a.m.) every weekday morning, without exception, before beginning a workday punctuated by standard distractions.
+    - You need your own philosophy for integrating deep work into your professional life. (As argued in this rule’s introduction, attempting to schedule deep work in an ad hoc fashion is not an effective way to manage your limited willpower.)
+    - [fav] I have been a happy man ever since January 1, 1990, when I no longer had an email address. I’d used email since about 1975, and it seems to me that 15 years of email is plenty for one lifetime. Email is a wonderful thing for people whose role in life is to be on top of things. But not for me; my role is to be on the bottom of things. What I do takes long hours of studying and uninterruptible concentration.
+    - Jung’s approach is what I call the bimodal philosophy of deep work. This philosophy asks that you divide your time, dedicating some clearly defined stretches to deep pursuits and leaving the rest open to everything else. During the deep time, the bimodal worker will act monastically—seeking intense and uninterrupted concentration. During the shallow time, such focus is not prioritized. This division of time between deep and open can happen on multiple scales.
+    - The chain method is a good example of the rhythmic philosophy of deep work scheduling because it combines a simple scheduling heuristic (do the work every day), with an easy way to remind yourself to do the work: the big red Xs on the calendar. Another common way to implement the rhythmic philosophy is to replace the visual aid of the chain method with a set starting time that you use every day for deep work. In much the same way that maintaining visual indicators of your work progress can reduce the barrier to entry for going deep, eliminating even the simplest scheduling decisions, such as when during the day to do the work, also reduces this barrier.
+    - he would rise promptly at seven to take a short walk. He would then eat breakfast alone and retire to his study from eight to nine thirty. The next hour was dedicated to reading his letters from the day before, after which he would return to his study from ten thirty until noon. After this session, he would mull over challenging ideas while walking on a proscribed route that started at his greenhouse and then circled a path on his property. He would walk until satisfied with his thinking then declare his workday done.
+    - “[Great creative minds] think like artists but work like accountants.”
+    - Great minds like Caro and Darwin didn’t deploy rituals to be weird; they did so because success in their work depended on their ability to go deep, again and again—there’s no way to win a Pulitzer Prize or conceive a grand theory without pushing your brain to its limit. Their rituals minimized the friction in this transition to depth, allowing them to go deep more easily and stay in the state longer.
+    - Regardless of where you work, be sure to also give yourself a specific time frame to keep the session a discrete challenge and not an open-ended slog.
+    - [fav] “It is only ideas gained from walking that have any worth.”)
+    - it’s not the amenities of the cabins that generate their value; it’s instead the grand gesture represented in the design and building of the cabin for the sole purpose of enabling better writing.
+    - These gestures push your deep goal to a level of mental priority that helps unlock the needed mental resources. Sometimes to go deep, you must first go big.
+    - The presence of the other party waiting for your next insight—be it someone physically in the same room or collaborating with you virtually—can short-circuit the natural instinct to avoid depth.
+    - It’s often straightforward to identify a strategy needed to achieve a goal , but what trips up companies is figuring out how to execute the strategy once identified .
+    - Focus on the Wildly Important
+    - try to say ‘ yes ’ to the subject that arouses a terrifying longing , and let the terrifying longing crowd out everything else.
+    - “ The more you try to do , the less you actually accomplish . ”
+    - Discipline # 2 : Act on the Lead Measures
+    - In other words , lead measures turn your attention to improving the behaviors you directly control in the near future that will then have a positive impact on your long - term goals .
+    - Discipline # 3 : Keep a Compelling Scoreboard
+    - I then labeled each row with the dates of the week and taped it to the wall next to my computer monitor ( where it couldn’t be ignored ) . As each week progressed , I kept track of the hours spent in deep work that week with a simple tally of
+    - tick marks in that week’s row . To maximize the motivation generated by this scoreboard , whenever I reached an important milestone in an academic paper ( e.g . , solving a key proof ) , I would circle the tally mark corresponding to the hour where I finished the result . * This served two purposes . First , it allowed me to connect , at a visceral level , accumulated deep work hours and tangible results . Second , it helped calibrate my expectations for how many hours of
+    - Create a Cadence of Accountability
+    - These efforts , he’s convinced , need the support of a mind regularly released to leisure .
+    - Highlight - Rule #1: Work Deeply > Page 146 · Location 1616
+    - Downtime Helps Recharge the Energy Needed to Work Deeply
+    - Highlight - Rule #1: Work Deeply > Page 150 · Location 1660
+    - The implication of these results is that your capacity for deep work in a given day is limited .
+    - Highlight - Rule #1: Work Deeply > Page 151 · Location 1676
+    - ( to end my own ritual , I say , “ Shutdown complete ” ) .
+    - Highlight - Rule #1: Work Deeply > Page 152 · Location 1684
+    - have , at this point , reviewed everything that’s on my professional plate . To end the ritual , I use this information to make a rough plan for the next day . Once the plan is created , I say , “ Shutdown complete , ” and my work thoughts are done for the day .
+    - Highlight - Rule #1: Work Deeply > Page 154 · Location 1704
+    - From my experience , it should take a week or two before the shutdown habit sticks — that is , until your mind trusts your ritual enough to actually begin to release work - related thoughts in the evening .
+    - Highlight - Rule #2: Embrace Boredom > Page 161 · Location 1788
+    - I suggest that you keep a notepad near your computer at work . On this pad , record the next time you’re allowed to use the Internet . Until you arrive at that time , absolutely no network connectivity is allowed — no matter how tempting . The idea motivating this strategy is that the use of a distracting service does not , by itself , reduce your brain’s ability to focus . It’s instead the constant switching from low - stimuli / high - value activities to high - stimuli / low - value activities , at the slightest hint of boredom or cognitive challenge , that teaches your mind to never tolerate an absence of novelty .
+    - Highlight - Rule #2: Embrace Boredom > Page 164 · Location 1825
+    - would suggest that you maintain the strategy of scheduling Internet use even after the workday is over .
+    - Highlight - Rule #2: Embrace Boredom > Page 165 · Location 1830
+    - isn’t to avoid or even to reduce the total amount of time you spend engaging in distracting behavior , but is instead to give yourself plenty of opportunities throughout your evening to resist switching to these distractions at the slightest hint of boredom .
+    - Highlight - Rule #2: Embrace Boredom > Page 165 · Location 1832
+    - One place where this strategy becomes particularly difficult outside work is when you’re forced to wait ( for example , standing in line at a store ) . It’s crucial in these situations that
+    - Highlight - Rule #2: Embrace Boredom > Page 165 · Location 1833
+    - if you’re in an offline block , you simply gird yourself for the temporary boredom , and fight through it with only the company of your thoughts . To simply wait and be bored has become a novel experience in modern life , but from the perspective of concentration training , it’s incredibly valuable .
+    - Highlight - Rule #2: Embrace Boredom > Page 165 · Location 1837
+    - This doesn’t mean that you have to eliminate distracting behaviors ; it’s sufficient that you instead eliminate the ability of such behaviors to hijack your attention . The simple strategy proposed here of scheduling Internet blocks goes a long way toward helping you regain this attention autonomy .
+    - Highlight - Rule #2: Embrace Boredom > Page 168 · Location 1868
+    - Remember , however , to always keep your self - imposed deadlines right at the edge of feasibility . You should be able to consistently beat the buzzer ( or at least be close ) , but to do so should require teeth - gritting concentration .
+    - Highlight - Rule #2: Embrace Boredom > Page 170 · Location 1888
+    - productive meditation .
+    - Highlight - Rule #2: Embrace Boredom > Page 172 · Location 1914
+    - One way it might attempt to sidestep this
+    - Highlight - Rule #2: Embrace Boredom > Page 172 · Location 1914
+    - expenditure is by avoiding diving deeper into the problem by instead looping over and over again on what you already know about it . For example , when working on a proof , my mind has a tendency to rehash simple preliminary results , again and again , to avoid the harder work of building on these results toward the needed solution . You must be on your guard for looping , as it can quickly subvert an entire productive meditation session
+    - Highlight - Rule #2: Embrace Boredom > Page 180 · Location 1997
+    - The key to this strategy is not the specifics , but instead the motivating idea that your ability to concentrate is only as strong as your commitment to train it .
+    - Highlight - Rule #3: Quit Social Media > Page 181 · Location 2000
+    - Quit Social Media
+    - Highlight - Rule #3: Quit Social Media > Page 187 · Location 2065
+    - If you don’t attempt to weigh pros against cons , but instead use any glimpse of some potential benefit as justification for unrestrained use of a tool , then you’re unwittingly crippling your ability to succeed in the world of knowledge work .
+    - Highlight - Rule #3: Quit Social Media > Page 191 · Location 2115
+    - Adopt a tool only if its positive impacts on these factors substantially outweigh its negative impacts .
+    - Highlight - Rule #3: Quit Social Media > Page 191 · Location 2117
+    - the craftsman variant requires that these positive
+    - Highlight - Rule #3: Quit Social Media > Page 191 · Location 2118
+    - impacts affect factors at the core of what’s important to you and that they outweigh the negatives .
+    - Highlight - Rule #3: Quit Social Media > Page 197 · Location 2191
+    - The question once again is not whether Twitter offers some benefits , but instead whether it offers enough benefits to offset its drag on your time and attention ( two resources that are especially valuable to a writer ) .
+    - Highlight - Rule #3: Quit Social Media > Page 201 · Location 2225
+    - The Law of the Vital Few * : In many settings , 80 percent of a given effect is
+    - Highlight - Rule #3: Quit Social Media > Page 201 · Location 2226
+    - due to just 20 percent of the possible causes .
+    - Highlight - Rule #3: Quit Social Media > Page 205 · Location 2270
+    - Just stop using them , cold turkey . If someone reaches out to you by other means and asks why your activity on a particular service has fallen off , you can explain , but don’t go out of your way to tell people .
+    - Highlight - Rule #3: Quit Social Media > Page 205 · Location 2273
+    - Would the last thirty days have been notably better if I had been able to use this service ? 2 . Did people care that I wasn’t using this service ?
+    - Highlight - Rule #3: Quit Social Media > Page 206 · Location 2282
+    - what makes social media insidious is that the companies that profit from your attention have succeeded with a masterful marketing coup : convincing our culture that if you don’t use their products you might miss out .
+    - Highlight - Rule #3: Quit Social Media > Page 207 · Location 2304
+    - A blog or magazine or television program that contained the content that typically populates a Facebook wall or Twitter feed , for example , would attract , on average , no audience . But when captured within the social conventions of these services , that same content will attract attention in the form of likes and comments
+    - Highlight - Rule #3: Quit Social Media > Page 208 · Location 2307
+    - from your friends and followers , you’ll return the favor by lavishing ( similarly undeserved ) attention on them . You “ like ” my status update and I’ll “ like ” yours . This agreement gives everyone a simulacrum of importance without requiring much effort in return .
+    - Highlight - Rule #3: Quit Social Media > Page 212 · Location 2360
+    - don’t default to whatever catches your attention at the moment , but instead dedicate some advance thinking to the question of how you want to spend your “ day within a day . ”
+    - Highlight - Rule #3: Quit Social Media > Page 214 · Location 2381
+    - but you might even fulfill Arnold Bennett’s ambitious goal of experiencing , perhaps for the first time , what it means to live , and not just
+    - Highlight - Rule #4: Drain the Shallows > Page 221 · Location 2452
+    - Schedule Every Minute of Your Day
+    - Highlight - Rule #4: Drain the Shallows > Page 226 · Location 2515
+    - “ What makes sense for me to do with the time that remains ? ” It’s the habit of asking that returns results , not your unyielding fidelity to the answer .
+    - Highlight - Rule #4: Drain the Shallows > Page 226 · Location 2516
+    - I would go so far as to argue that someone following this combination of comprehensive scheduling and a willingness to adapt or modify the plan as needed will likely experience more creative insights than someone who adopts a more traditionally “ spontaneous ” approach where the day is left open and unstructured .
+    - Highlight - Rule #4: Drain the Shallows > Page 227 · Location 2526
+    - in advance what you’re going to do with every minute of your workday .
+    - Highlight - Rule #4: Drain the Shallows > Page 232 · Location 2579
+    - What percentage of my time should be spent on shallow work ?
+    - Highlight - Rule #4: Drain the Shallows > Page 241 · Location 2680
+    - A commitment to fixed - schedule productivity , however , shifts you into a scarcity mind - set . Suddenly
+    - Highlight - Rule #4: Drain the Shallows > Page 249 · Location 2773
+    - What is the project represented by this message , and what is the most efficient ( in terms of messages generated ) process for bringing this project to a successful conclusion ?
+    - Highlight - Rule #4: Drain the Shallows > Page 253 · Location 2820
+    - When it comes to e - mail , they believed , it’s the sender’s responsibility to convince the receiver that a reply is worthwhile . If you didn’t make a convincing case and sufficiently minimize the effort required by the professor to respond , you didn’t get a response .
+    - Conclusion
+    - Highlight - Page 257 · Location 2852
+    - Gates realizes that there’s an opportunity to design software for the machine , so he drops everything and with the help of Paul Allen and Monte Davidoff spends the next eight weeks hacking together a version of the BASIC programming language for the Altair . This story is often cited as an example of Gates’s insight and boldness , but recent interviews have revealed another trait that played a crucial
+    - Highlight - Page 257 · Location 2855
+    - Gates’s preternatural deep work ability .
+    - Highlight - Page 257 · Location 2857
+    - He would then sleep for an hour or two , wake up , and pick up right where he left off — an ability that a still - impressed Paul Allen describes as “ a prodigious feat of concentration . ”
+    - Highlight - Page 258 · Location 2859
+    - “ The one trait that differentiated [ Gates from Allen ] was focus . Allen’s mind would flit between many ideas and passions , but Gates was a serial obsessor . ”
+    - Highlight - Page 260 · Location 2883
+    - During the summer , for example , I would often work under the dome in Barker Engineering library — a pleasingly cavernous location that becomes too crowded when class is in session , and during the winter , I sought more obscure locations for some silence , eventually developing a preference for the small but well - appointed Lewis Music Library .
+    - Highlight - Page 261 · Location 2903
+    - began to work more in isolated locations outside my office .
+    - Highlight - Page 262 · Location 2907
+    - subway rides and while shoveling snow . When my son napped on the weekend , I would pace the yard thinking , and when stuck in traffic I would methodically work through problems that were stymieing me .
+    - Highlight - Page 263 · Location 2917
+    - For many , there’s a comfort in the artificial busyness of rapid e - mail messaging and social media posturing , while the deep life demands that you leave much of that behind .
+    - Highlight - Page 263 · Location 2923
+    - live the focused life , because it’s the best kind there is . ” I agree . So does Bill Gates . And
+`;
+highlights = highlights.replace('\n', '<br>');
+
+
+export default (
+  <pre>
+    <h4>
+      Highlights
+    </h4>
+    <p style={{"line-height": "19px"}}>
+      {highlights}
+    </p>
+  </pre>
+);

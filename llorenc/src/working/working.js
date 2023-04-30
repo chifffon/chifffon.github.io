@@ -4,8 +4,6 @@ import Bullet from "./workingBullet";
 import beingMoreSocial from "./entries/beingMoreSocial";
 import ropeSkipping from "./entries/ropeSkipping";
 import thinkingless from "./entries/thinkingless";
-import coffee from "./entries/writing/hermano";
-import laying from "./entries/laying";
 import booksArticles from "./entries/booksArticles";
 
 export default class Working extends React.Component {
