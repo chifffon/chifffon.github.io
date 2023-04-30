@@ -1,6 +1,7 @@
 import React from "react";
 import Bullet from "../working/workingBullet";
-import deepwork from "./2023/deepwork";
+import DeepWork from "./2023/deepwork";
+import Collapsible from "../components/Collapsible";
 
 export default class Books extends React.Component {
   render() {
@@ -8,27 +9,48 @@ export default class Books extends React.Component {
       <div>
         <h1>books</h1>
         <p>
-          Book reviews, why I like or not like them, what was the most meaningful things I've learned from them, and a subjective rating from 0 to 5 points.
+          Book reviews, why I like or dislike them, what were the most meaningful things I learned from them and a subjective rating from 0 to 5.
         </p>
         <h3>
         2023
         </h3>
-          <Bullet title="The network state" text={""}></Bullet>
-          <Bullet title="The four agreements" text={""}></Bullet>
-          <Bullet title="Industrial society and it's future" text={""}></Bullet>
-          <Bullet title="Atomic habits" text={""}></Bullet>
-          <Bullet title="The changing world order" text={""}></Bullet>
-          <Bullet title="System design interview" text={""}></Bullet>
-          <Bullet title="Bronze age mindset" text={""}></Bullet>
-          <Bullet title="Zero to one" text={""}></Bullet>
-          <Bullet title="Deep work" text={deepwork}></Bullet>
+          <Collapsible header="The network state">
+            <DeepWork></DeepWork>
+          </Collapsible>
+          <Collapsible header="The four agreements">
+            <DeepWork></DeepWork>
+          </Collapsible>
+          <Collapsible header="Industrial society and it's future">
+            <DeepWork></DeepWork>
+          </Collapsible>
+          <Collapsible header="Atomic habits">
+            <DeepWork></DeepWork>
+          </Collapsible>
+          <Collapsible header="The changing world order">
+            <DeepWork></DeepWork>
+          </Collapsible>
+          <Collapsible header="System design interview">
+            <DeepWork></DeepWork>
+          </Collapsible>
+          <Collapsible header="Bronze age mindset">
+            <DeepWork></DeepWork>
+          </Collapsible>
+          <Collapsible header="Zero to one">
+            <DeepWork></DeepWork>
+          </Collapsible>
+          <Collapsible header="Deep work">
+            <DeepWork></DeepWork>
+          </Collapsible>
+          <div>
+          </div>
 
         <h3>
          Currently reading
         </h3>
-          <Bullet title="The brothers karamazov" text=""></Bullet>
-          <Bullet title="The sovereign individual" text=""></Bullet>
-
+        <Collapsible header="The brothers karamazov">
+          </Collapsible>
+          <Collapsible header="The sovereign individual">
+          </Collapsible>
           {/* Network state *****
 The four agreements ***.5
 Industrial society & its future ****

@@ -8,9 +8,9 @@ export default class WorkingBullet extends React.Component {
   render() {
     const { title, text } = this.props;
     return (
-      <div>
+      <div className="bullet-box">
         <div>
-          <a onClick={this.toggleText} className="bullet-box">
+          <a onClick={this.toggleText}>
             {title}
           </a>
         </div>

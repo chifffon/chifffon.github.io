@@ -2,6 +2,16 @@
   width: 100%;
 }
 
+.collapsible {
+  cursor: pointer;
+  margin: 0;
+}
+
+.highlight {
+  font-style: italic;
+  padding-bottom: 7px;
+}
+
 ::-webkit-scrollbar {
   width: 3px;
 }
