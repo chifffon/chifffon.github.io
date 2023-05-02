@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
 
 function Collapsible(props) {
-  const [isOpen, setIsOpen] = useState(false);
+  const isOpen = props.index === props.openIndex;
 
   const toggleCollapsible = () => {
-    setIsOpen(!isOpen);
+    props.toggleCollapsible(props.index);
   };
 
   return (
-    <div >
-      <h5 className='collapsible' onClick={toggleCollapsible}> - {props.header}</h5>
-      {isOpen && props.children}
+    <div>
+      <h5 className="collapsible" onClick={toggleCollapsible}>
+        - {props.header}
+      </h5>
+      {isOpen && <div>
+        {props.children}
+      </div>}
     </div>
   );
 }

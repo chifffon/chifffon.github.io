@@ -10,11 +10,8 @@ const Highlights = ({ highlights, highlightsUrl, review }) => {
   const formattedReview = review.split('\n').map((line, index) => <React.Fragment key={index}>{line}<br/></React.Fragment>);
 
   return (
-    <div style={{ paddingLeft: "15px" }}>
-      <p style={{ margin: 0, whiteSpace: "pre-line" }}>{formattedReview}</p>
-        <p>
-          4/5
-        </p>
+    <div style={{ paddingTop: 0, paddingRight: 200, paddingBottom: 0, paddingLeft: 50 }}>
+      <p style={{ whiteSpace: "pre-line" }}>{formattedReview}</p>
       <h4 style={{ cursor: "pointer" }} onClick={toggleHighlights}>
         Favorite highlights
       </h4>

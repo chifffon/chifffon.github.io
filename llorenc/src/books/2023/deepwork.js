@@ -24,7 +24,7 @@ const DeepWork = () => {
   
   He also mentions an artisan’s approach to deep work, in which one is in love with the approach to the work, instead of the surrounding matters or the object itself. This, I believe, is a healthy approach to working in a capitalist economy in which you can struggle to find value in working for a company that could not care for you.
   
-  I give it a 4/5 because the last third was mostly talking about emails and being a proffessor.
+  I give it a 3.8/5 because the last third was mostly talking about emails and being a proffessor.
   `;
 
   const highlightsUrl = process.env.PUBLIC_URL + "/2023/deepwork_highlights.html";
