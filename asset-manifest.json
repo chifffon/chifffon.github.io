@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b700a5ef.css",
+    "main.js": "/static/js/main.e79cbd1a.js",
+    "static/media/kittycl.png": "/static/media/kittycl.d75438639ee9efe1f66c.png",
+    "static/media/IMG_6752.jpg": "/static/media/IMG_6752.2e070bbf116b81dc9e2d.jpg",
+    "static/media/kittybalcony.JPG": "/static/media/kittybalcony.1e2a318d1e04e5e2a4d9.JPG",
+    "static/media/mirror.png": "/static/media/mirror.b2bb9aad090220013730.png",
+    "static/media/menew.png": "/static/media/menew.b3eb5ae13e9831e70bf8.png",
+    "static/media/terry.png": "/static/media/terry.58f25608443d924c2681.png",
+    "static/media/Inconsolata-VariableFont_wdth,wght.ttf": "/static/media/Inconsolata-VariableFont_wdth,wght.d436e6cbc31e78bb4421.ttf",
+    "static/media/kittysleep.png": "/static/media/kittysleep.935892d2b738d4aae71f.png",
+    "static/media/meolde.png": "/static/media/meolde.1d69453c1700c98d2f7a.png",
+    "static/media/mom.JPG": "/static/media/mom.7d3bd675968b3baf89d0.JPG",
+    "index.html": "/index.html",
+    "main.b700a5ef.css.map": "/static/css/main.b700a5ef.css.map",
+    "main.e79cbd1a.js.map": "/static/js/main.e79cbd1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b700a5ef.css",
+    "static/js/main.e79cbd1a.js"
+  ]
+}
