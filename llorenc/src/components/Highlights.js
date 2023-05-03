@@ -21,7 +21,7 @@ const Highlights = ({ highlights, highlightsUrl, review }) => {
             {highlights.map((highlight) => (
               <li className="highlight" key={highlight}>- {highlight}</li>
             ))}
-            <a href={highlightsUrl} target="_blank">... see all highlights</a>
+            {highlightsUrl && <a href={highlightsUrl} target="_blank">... see all highlights</a>}
           </p>
         </>
       )}

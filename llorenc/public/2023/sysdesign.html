@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "XHTML1-s.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+<style>
+.bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+</style>
+</head>
+<body>
+<div class='bodyContainer'>
+<h1><div class='notebookFor'>Notes and highlights for</div><div class='bookTitle'>System Design Interview – An insider's guide
+</div><div class='authors'>
+Xu, Alex
+</div></h1><hr/>
+
+<h2 class='sectionHeading'>CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS</h2><h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 5 &middot; Location 113</div><div class='noteText'>Non - relational databases might be the right choice if : • Your application requires super - low latency . • Your data are unstructured , or you do not have any relational data . • You only need to serialize and deserialize data ( JSON , XML , YAML , etc . ) . • You need</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 7 &middot; Location 152</div><div class='noteText'>A master database generally only supports write operations . A slave database gets copies of the data from the master database and only supports read operations .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 11 &middot; Location 201</div><div class='noteText'>This caching strategy is called a read - through cache .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 15 &middot; Location 258</div><div class='noteText'>The cache expiry time should neither be too long nor too short . If it is too long , the content might no longer be fresh . If it is too short , it can cause repeat reloading of content from origin servers to the CDN .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 15 &middot; Location 261</div><div class='noteText'>• CDN fallback : You should consider how your website / application copes with CDN failure . If there is a temporary CDN outage , clients should be able to detect the problem and request resources from the origin .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 17 &middot; Location 275</div><div class='noteText'>For this , we need to move state ( for instance user session data ) out of the web tier . A good practice is to store session data in the persistent storage such as relational database or NoSQL . Each web server in the cluster can access state data from databases . This is called stateless web tier .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 19 &middot; Location 293</div><div class='noteText'>A stateless system is simpler , more robust , and scalable .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 22 &middot; Location 328</div><div class='noteText'>preferred architecture for building a scalable and reliable application . With the message queue , the producer can post a message to the queue when the consumer is unavailable to process it . The consumer can read messages from the queue even when the producer is unavailable .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 26 &middot; Location 377</div><div class='noteText'>a hash function is used to find the corresponding shard . In our example , user_id % 4 is used as the hash function . If the result equals to 0 , shard 0 is used to store and fetch data . If the result equals to 1 , shard 1 is used . The same logic applies to other shards .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 28 &middot; Location 396</div><div class='noteText'>To solve this problem , we may need to allocate a shard for each celebrity .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 28 &middot; Location 397</div><div class='noteText'>Join and de - normalization : Once a database has been sharded across multiple servers , it is hard to perform join operations across database shards . A common workaround is to de - normalize the database so that queries can be performed in a single table .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 30 &middot; Location 407</div><div class='noteText'>how we scale our system to support millions of users : • Keep web tier stateless • Build redundancy at every tier • Cache data as much as you can • Support multiple data centers • Host static assets in CDN</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 30 &middot; Location 415</div><div class='noteText'>• Scale your data tier by sharding • Split tiers into individual services • Monitor your system and use automation tools</h3>
+<h2 class='sectionHeading'>CHAPTER 2: BACK-OF-THE-ENVELOPE ESTIMATION</h2><h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 35 &middot; Location 467</div><div class='noteText'>Although data volume can become enormous when dealing with distributed systems , calculation all boils down to the basics . To obtain correct calculations , it is critical to know the data volume unit using the power of 2 . A byte is a sequence of 8 bits . An ASCII character uses one byte of memory ( 8 bits ) . Below is a table explaining the data volume unit ( Table 2 - 1 ) .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 35 &middot; Location 477</div><div class='noteText'>ns = nanosecond , µs = microsecond , ms = millisecond 1 ns = 10 ^ - 9 seconds 1 µs = 10 ^ - 6 seconds = 1,000 ns 1 ms = 10 ^ - 3 seconds = 1,000 µs = 1,000,000 ns</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 35 &middot; Location 485</div><div class='noteText'>• Memory is fast but the disk is slow . • Avoid disk seeks if possible . • Simple compression algorithms are fast . • Compress data before sending it over the internet if possible . • Data centers are usually in different regions , and it takes time to send data between them .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 38 &middot; Location 528</div><div class='noteText'>not expected . Use round numbers and approximation to your advantage . The division question can be simplified as follows : “ 100,000 / 10 ” . • Write down your assumptions . It is a good idea to write down your assumptions to be referenced later . • Label your units . When you write down “ 5 ” , does it mean 5 KB or 5 MB ? You might confuse yourself with this . Write down the units because “ 5 MB ” helps to remove ambiguity . • Commonly asked back - of - the - envelope estimations : QPS , peak QPS , storage , cache , number of servers , etc . You can practice these calculations when preparing for an interview . Practice makes perfect .</h3>
+<h2 class='sectionHeading'>CHAPTER 3: A FRAMEWORK FOR SYSTEM DESIGN INTERVIEWS</h2><h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 42 &middot; Location 572</div><div class='noteText'>An effective system design interview gives strong signals about a person's ability to collaborate , to work under pressure , and to resolve ambiguity constructively . The ability to ask good questions is also an essential skill , and many interviewers specifically look for this skill .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 42 &middot; Location 575</div><div class='noteText'>Over - engineering is a real disease of many engineers as they delight in design purity and ignore tradeoffs .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 43 &middot; Location 598</div><div class='noteText'>One of the most important skills as an engineer is to ask the right questions , make the proper assumptions , and gather all the information needed to build a system . So , do not be afraid to ask questions . When you ask a question , the interviewer either answers your question directly or asks you to make your assumptions . If the latter happens , write down your assumptions on the whiteboard</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 44 &middot; Location 615</div><div class='noteText'>What are the most important features for the product ? Interviewer : Ability to make a post and see friends ’ news feed . Candidate : Is the news feed sorted in reverse chronological order or a particular order ? The particular order means each post is given a different weight . For instance , posts from your close friends are more important than posts from a group .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 44 &middot; Location 624</div><div class='noteText'>What is the traffic volume ?</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 45 &middot; Location 634</div><div class='noteText'>• Come up with an initial blueprint for the design . Ask for feedback . Treat your interviewer as a teammate and work together . Many good interviewers love to talk and get involved . • Draw box diagrams with key components on the whiteboard or paper . This might include clients ( mobile / web ) , APIs , web servers , data stores , cache , CDN , message queue , etc . • Do back - of - the - envelope calculations to evaluate if your blueprint fits the scale constraints . Think out loud . Communicate with your interviewer if back - of - the - envelope is necessary before diving into</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 45 &middot; Location 642</div><div class='noteText'>Should we include API endpoints and database schema here ? This depends on the problem . For large design problems like “ Design Google search engine ” , this is a bit of too low level . For a problem like designing the backend for a multi - player poker game , this is a fair game . Communicate with your interviewer .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 51 &middot; Location 699</div><div class='noteText'>• Always ask for clarification . Do not assume your assumption is correct . • Understand the requirements of the problem . • There is neither the right answer nor the best answer . A solution designed to solve the problems of a young startup is different from that of an established company with millions of users . Make sure you understand the requirements . • Let the interviewer know what you are thinking . Communicate with your interview . • Suggest multiple approaches if possible . • Once you agree with your interviewer on the blueprint , go into details on each component . Design the most critical components first . • Bounce ideas off the interviewer . A good interviewer works with you as a teammate . • Never give up . Don’ts • Don't be unprepared for typical interview questions . • Don’t jump into a solution without clarifying the requirements and assumptions .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 52 &middot; Location 715</div><div class='noteText'>• Don’t go into too much detail on a single component in the beginning . Give the high - level design first then drills down . • If you get stuck , don't hesitate to ask for hints . • Again , communicate . Don't think in silence . • Don’t think your interview is done once you give the design . You are not done until your interviewer says you are done . Ask for feedback early and often .</h3>
+<h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 52 &middot; Location 726</div><div class='noteText'>Step 1 Understand the problem and establish design scope : 3 - 10 minutes Step 2 Propose high - level design and get buy - in : 10 - 15 minutes Step 3 Design deep dive : 10 - 25 minutes Step 4 Wrap : 3 - 5 minutes</h3>
+<h2 class='sectionHeading'>CHAPTER 4: DESIGN A RATE LIMITER</h2><h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 75 &middot; Location 1060</div><div class='noteText'>Two strategies are commonly used to solve the problem : Lua script [ 13 ] and sorted sets data structure in Redis [ 8 ] .</h3>
+<h2 class='sectionHeading'>CHAPTER 8: DESIGN A URL SHORTENER</h2><h3 class='noteHeading'>Highlight (<span class='highlight_yellow'>yellow</span>) - Page 142 &middot; Location 2010</div><div class='noteText'>1115710 = 2 x 622 + 55 x 621 + 59 x 620 = [ 2 , 55 , 59 ] - &gt; [ 2 , T , X ] in base 62 representation . Figure 8 - 6 shows the conversation process .</h3>
+</div> 
+</body> 
+</html> 

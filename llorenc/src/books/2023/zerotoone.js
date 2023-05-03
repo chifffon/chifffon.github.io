@@ -40,7 +40,7 @@ const ZeroToOne = () => {
     - The philosophy and realness around appreciating the art of (work) innovation; persist, "you are not a lottery ticket" is a powerful quote, do not let your life be dictated by chance.
 
     - Be a contrarian, swim against the waters if you can, you will learn more, movement is needed in life, become a monopoly of one.
-    
+
     - Cults are cool, join one.
 
     - Finance is a cop out
